@@ -1,0 +1,94 @@
+.icon-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.side-nav {
+  width: 250px;
+  background-color: #343a40;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+  color: white;
+}
+
+.profile-details,
+.notifications {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-email {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.notifications h3 {
+  margin-bottom: 1rem;
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f4f4f9;
+  border-radius: 4px;
+  text-align: left;
+}

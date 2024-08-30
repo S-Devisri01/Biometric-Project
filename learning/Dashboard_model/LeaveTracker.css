@@ -1,0 +1,52 @@
+.leave-tracker {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leave-tracker h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #343a40;
+  }
+  
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .category-card {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-card:hover {
+    background-color: #e9ecef;
+  }
+  
+  .category-card .circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  .category-card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #343a40;
+  }
+  
+  .category-card .leave-count {
+    margin-top: 10px;
+    color: #6c757d;
+  }
+  

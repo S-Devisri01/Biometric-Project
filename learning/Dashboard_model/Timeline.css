@@ -1,0 +1,81 @@
+:root {
+    --on-time-color: #27ae60;
+    --late-color: #f39c12;
+    --holiday-color: #3498db;
+    --absent-color: #e74c3c;
+    --sick-leave-color: #9b59b6;
+    --vacation-color: #f1c40f;
+    --border-color: #7f8c8d;
+    --grid-line-color: #ecf0f1;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .day {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date-box {
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  .hour-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+  }
+  
+  .hour-box {
+    padding: 0.5rem;
+    text-align: center;
+    background-color: var(--grid-line-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .day.on-time .hour-box {
+    background-color: var(--on-time-color);
+  }
+  
+  .day.late .hour-box {
+    background-color: var(--late-color);
+  }
+  
+  .day.holiday .hour-box {
+    background-color: var(--holiday-color);
+  }
+  
+  .day.absent .hour-box {
+    background-color: var(--absent-color);
+  }
+  
+  .day.sick-leave .hour-box {
+    background-color: var(--sick-leave-color);
+  }
+  
+  .day.vacation .hour-box {
+    background-color: var(--vacation-color);
+  }
+  
+  @media (max-width: 768px) {
+    .day {
+      grid-template-columns: 100px 1fr;
+    }
+  
+    .hour-box {
+      padding: 0.3rem;
+    }
+  }
+  
