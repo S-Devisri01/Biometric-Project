@@ -1,6 +1,9 @@
 1st create a react app using terminal comment with import modules and material ui package then add these files and run this code 
 
 Import this packages
+npm install react-scripts --save
+rm -rf node_modules
+npm install
 
 npm install @mui/material @emotion/react @emotion/styled
 npm install react-router-dom@5.3.0
