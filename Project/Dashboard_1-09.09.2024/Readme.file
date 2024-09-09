@@ -1,1 +1,5 @@
+Import node modules then run this file
 
+npm install
+
+npm dev run
