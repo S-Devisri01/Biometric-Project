@@ -1,1 +1,12 @@
+Follow this steps then run this file.
 
+npm install @mui/material @emotion/react @emotion/styled
+npm install -g create-vite
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+
+replace the scr files to the my-app scr file
+
+Then run this code using
+npm run dev
